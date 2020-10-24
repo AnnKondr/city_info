@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from './components/Container';
+import City from './components/City';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-   
+    <Container>
+      <City />
+    </Container>
   </React.StrictMode>,
   document.getElementById('root')
 );
