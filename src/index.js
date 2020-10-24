@@ -3,14 +3,28 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from './components/Container';
 import City from './components/City';
+import Nav from './components/Nav';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Gallery from './components/Gallery';
+import History from './components/History';
+import Myth from './components/Myth';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container>
-      <City />
-    </Container>
+    <BrowserRouter>
+      <Nav />
+      <Container>
+        <Switch>
+          <Route exact path="/" component={City} />
+          <Route exact path="/history" component={History} />
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/myth" component={Myth} />
+        </Switch>
+
+      </Container>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
