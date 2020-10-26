@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from './components/Container';
-import City from './components/City';
 import Nav from './components/Nav';
+import Container from './components/Container';
+import Home from './components/Home';
+import History from './components/History';
+import Myth from './components/Myth';
+import Gallery from './components/Gallery';
+import Forms from './components/Forms';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Gallery from './components/Gallery';
-import History from './components/History';
-import Myth from './components/Myth';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,10 +18,11 @@ ReactDOM.render(
       <Nav />
       <Container>
         <Switch>
-          <Route exact path="/" component={City} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/history" component={History} />
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/myth" component={Myth} />
+          <Route exact path="/form" component={Forms} />
         </Switch>
 
       </Container>
