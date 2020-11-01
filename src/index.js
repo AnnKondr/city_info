@@ -11,6 +11,7 @@ import Forms from './components/Forms';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Myths from './components/Myths';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,7 +22,8 @@ ReactDOM.render(
           <Route exact path="/" component={Home} />
           <Route exact path="/history" component={History} />
           <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/myth" component={Myth} />
+          <Route exact path="/myths" component={Myths} />
+          <Route exact path="/myths/:id" component={Myth} />
           <Route exact path="/form" component={Forms} />
         </Switch>
 

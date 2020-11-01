@@ -14,7 +14,7 @@ export default function Nav() {
                     <Link to="/history" className="nav-link rounded-0">History</Link>
                 </li>  
                 <li className="nav-item">
-                    <Link to="/myth" className="nav-link rounded-0">Myth</Link>
+                    <Link to="/myths" className="nav-link rounded-0">Myths</Link>
                 </li> 
                 <li className="nav-item">
                     <Link to="/gallery" className="nav-link rounded-0">Gallery</Link>
